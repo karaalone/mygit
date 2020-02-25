@@ -9,16 +9,16 @@ int main()
 	    b[i]=a[i][0]+a[i][1];   
     m=b[0];
     
-    for(i=0;i<7;i++)
+    for(i=1;i<7;i++)
     {
     	if(b[i]>m)
     	{
     		m=b[i];
         	k=i;
 		}
-    	else continue;
 	}
-   
-	printf("%d",k); 
+	if(m>8)
+	printf("%d",k+1); 
+	else printf("0");
 	return 0;
 } 
